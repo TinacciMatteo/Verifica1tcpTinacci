@@ -62,15 +62,15 @@ public class AppServer
                     risposta = letto + numClient;
                     System.out.println(risposta);
                     out.writeBytes(String.valueOf((risposta)) + "\n");
-                }else if(operatoreClient == "-"){
+                }else if(operatoreClient.equals("-"){
                     risposta = letto - numClient;
                     System.out.println(risposta);
                     out.writeBytes(String.valueOf((risposta))+"\n");
-                }else if(operatoreClient == "*"){
+                }else if(operatoreClient.equals("*"){
                     System.out.println(risposta);
                     risposta = letto * numClient;
                     out.writeBytes(String.valueOf((risposta))+"\n");
-                }else if(operatoreClient == "/"){
+                }else if(operatoreClient.equals("/"){
                     System.out.println(risposta);
                     risposta = letto / numClient;
                     out.writeBytes(String.valueOf((risposta))+"\n");
