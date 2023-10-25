@@ -65,15 +65,15 @@ public class AppServer
                 }else if(operatoreClient == "-"){
                     risposta = letto - numClient;
                     System.out.println(risposta);
-                    out.writeBytes(String.valueOf((risposta)));
+                    out.writeBytes(String.valueOf((risposta))+"\n");
                 }else if(operatoreClient == "*"){
                     System.out.println(risposta);
                     risposta = letto * numClient;
-                    out.writeBytes(String.valueOf((risposta)));
+                    out.writeBytes(String.valueOf((risposta))+"\n");
                 }else if(operatoreClient == "/"){
                     System.out.println(risposta);
                     risposta = letto / numClient;
-                    out.writeBytes(String.valueOf((risposta)));
+                    out.writeBytes(String.valueOf((risposta))+"\n");
                 }else{
                     out.writeBytes("operatore o numero non valido");
                 }  
